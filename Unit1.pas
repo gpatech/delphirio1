@@ -10,6 +10,7 @@ uses
 type
   TForm1 = class(TForm)
     Button1: TButton;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,5 +24,16 @@ implementation
 
 {$R *.fmx}
 {$R *.iPhone4in.fmx IOS}
+{$R *.Moto360.fmx ANDROID}
+{$R *.GGlass.fmx ANDROID}
+{$R *.iPad.fmx IOS}
+{$R *.XLgXhdpiTb.fmx ANDROID}
+{$R *.iPhone55in.fmx IOS}
+{$R *.LgXhdpiTb.fmx ANDROID}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  showmessage('Hello');
+end;
 
 end.
